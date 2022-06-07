@@ -12,7 +12,7 @@ class Solution {
                 //condition verification
                 if(nums[i]+nums[j]==target)  
                 {
-                    //added the values of i and j to 
+                    //added the values of i and j to in to arr.
                     int k=0;
                     arr[k++]=i;
                     arr[k]=j;
