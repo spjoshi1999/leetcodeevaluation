@@ -1,0 +1,26 @@
+Q1.TWO SUM EASY
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        
+        int[]arr=new int[2];//declared an empty array;
+        
+        
+        for(int i=0;i<nums.length;i++)  //traversal of array
+        {
+            for(int j=i+1;j<nums.length;j++)
+            {
+                //condition verification
+                if(nums[i]+nums[j]==target)  
+                {
+                    //added the values of i and j to 
+                    int k=0;
+                    arr[k++]=i;
+                    arr[k]=j;
+                    break;
+                }
+            }
+        }
+        return arr;
+
+    }
+}
